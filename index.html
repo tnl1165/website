@@ -14,74 +14,118 @@
 		src: url(Okta-ExtraLight.otf);
 	}
 	
+	@font-face {
+		font-family: canvas;
+		src: url(canvas.otf);
+	}
+	
 	*{box-sizing: border-box;}
 	
 	body{
 		margin: 0;
 		font-family: oktalight;
+		text-align: center;
 		color: #E9967A;
-		background-color: #FFF5EE;
+		background-color: #fff0d3;
 		letter-spacing: 3px;
 	}
 	
 	/* Style the header */
 	.header {
-		background-image: url(img_2288.JPG);
-		background-size: cover;
-		background-repeat: no-repeat;
-		padding: 250px;
+		padding: 400px;
 		text-align: center;
-		letter-spacing: 10px;
+		letter-spacing: 15px;
 		font-size: 30px;
 		font-family: oktabold;
 	}
 	
 	/* Style the top navigation bar */
 	.topnav {
-		padding: 5px;
+		right: 0px;
+		padding: 10px;
 		overflow: hidden;
 		position: fixed;
 		top: 0;
 		width: 100%;
-		background-color: transparent;
+		background-color: #fff0d3;
+	}
+	
+	/* Special Font for tiffany*/
+	span {
+		font-size: 60px;
+		font-family: canvas;
+		letter-spacing: 5px;
+		color: #ed9c6a;
+		padding: 0px;
+		background-color: #fff0d3;
+		overflow: hidden;
+		position: fixed;
+		top: 0;
 	}
 	
 	/* Style the navigation links */
 	.topnav a{
 		float: right;
 		display: block;
-		color: #E9967A;
 		text: center;
-		padding: 14px 16px;
-		font-size: 15px;
+		padding: 15px 25px;
+		font-size: 14px;
 		text-decoration: none;
 	}
 	
 	/* Change text on hover */
-	a:link {color: #E9967A;}
-	a:visited {color: #E9967A;}
-	a:hover {color: #FFDAB9}
+	a.nav:link {color: black;}
+	a.nav:visited {color: black;}
+	a.nav:hover {color: #a6a59d;}
+	
+	/*Style Footer Links*/
+	a:visited {
+		color: #E9967A;
+		text-decoration: none;
+	}
+	a:link {
+		color: #E9967A;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #fab18a;
+		text-decoration: none;
+	}
 	
 	
 	/* Columns */
 	.column {
 		text: center;
-		padding: 30px;
+		padding: 5px;
 	}
 	
 	/* Top column */
-	.column.top {
-		width: 25%;
+	.column.one {
+		width: 100%;
+		background-color: #fff0d3;
+		background-size: cover;
+		font-size: 12px;
+	}
+	
+	.posts {
+		background-color: #fff0d3;
+		width: 300px;
+		padding: 50px;
+		margin: 20px;
 	}
 	
 	/* Middle column */
-	.column.middle {
-		width: 50%;
+	.column.two {
+		width: 100%;
+		padding: 5px;
 	}
 	
 	/* Bottom column */
-	.column.bottom {
-		width:25%;
+	.column.three {
+		width: 100%;
+		background-color: #FAE2CA;
+		background-size: cover;
+		font-size: 12px;
 	}
 	
 	/* Clear floats after columns */
@@ -100,51 +144,64 @@
 	
 	/* Style footer */
 	.footer {
-		background-color: #E7C2BA;
-		padding: 20px;
+		background-color: #F4C596;
+		padding: 5px;
 		text-align: center;
-		font-family: sans-serif;
+		font-family: canvas;
+		font-size: 12px;
 	}
 	
-
+	
+	
 </style>
 </head>
 <body>
 	
 	<div class="topnav">
-		<a href="ABOUT.html" style="float:right">ABOUT</a>
-		<a href="ILLUSTRATIONS.html">ILLUSTRATION</a>
-		<a href="PROJECTS.html">PROJECTS</a>
-		<a href="TFNY DESIGNS.html">HOME</a>
-		<a href="TFNY DESIGN.html" style="float:left">TFNY.L</a>
+		<a class="nav" href="ABOUT.html" style="float:right">ABOUT</a>
+		<a class="nav" href="ILLUSTRATIONS.html">ILLUSTRATION</a>
+		<a class="nav" href="PROJECTS.html">PROJECTS</a>
+		<a class="nav" href="index.html">HOME</a>
+		<a href="index.html" style="float:left"><span>tiffany</span></a>
 	</div>
 	
 	<div class="header">
-		<h1>TIFFANY LIEW</h1>
 	</div>
 	
+
+	
 	<div class="row">
-		<div class="column top">
-			<h2>PROJECTS</h2>
+		<div class="column one">
+	
+				
+		
 		</div>
 		
-		<div class="column middle">
-			<h2>ILLUSTRATIONS</h2>
+		<div class="column two">
+			<h2>youtube</h2>
+			<iframe width="336" height="189" src="https://www.youtube.com/embed/G0X6UWKox28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="336" height="189" src="https://www.youtube.com/embed/GLvSbBkzhe4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="336" height="189" src="https://www.youtube.com/embed/g1MF5exZum0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
-		
-		<div class="column bottom">
-		</div>
+
+		<br>
+		<div class="column three">
+			<h2>instagram</h2>
+				<!--SnapWidget -->
+				<iframe src="https://snapwidget.com/embed/816402" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:1025px; height:205px"></iframe>
+			</div>
 	</div>
-		
+	
 	<div class="footer">
-		<a href="https://www.facebook.com/tiffany.liew.77" class="fab fa-facebook-square" style="font-size:30px;"></a>
-		<a href="https://www.instagram.com/existential_cry_sisss/" class="fab fa-instagram-square" style="font-size:30px;"></a>
-		<a href="https://www.pinterest.ca/tnl1165/" class="fab fa-pinterest-square" style="font-size:30px;"></a>
-		<a href="https://twitter.com/tiffyliew" class="fab fa-twitter-square" style="font-size:30px;"></a>
-		<a href="https://www.linkedin.com/in/tiffany-liew-258714139/" class="fab fa-linkedin" style="font-size:30px;"></a>
-		<a href="https://www.youtube.com/channel/UCbhs4_2Xhhi-6GhlwocJTdg?view_as=subscriber" class="fab fa-youtube-square" style="font-size:30px;"></a>
-		<p><i class="far fa-copyright"></i> by Tiffany Liew<br></p>
+		<p><i class="far fa-copyright"></i>2020 by tiffany liew</p>
+			<a href="https://www.facebook.com/tiffany.liew.77" class="fab fa-facebook-square" style="font-size:20px;"></a>
+		<a href="https://www.instagram.com/existential_cry_sisss/" class="fab fa-instagram-square" style="font-size:20px;"></a>
+		<a href="https://www.pinterest.ca/tnl1165/" class="fab fa-pinterest-square" style="font-size:20px;"></a>
+		<a href="https://twitter.com/tiffyliew" class="fab fa-twitter-square" style="font-size:20px;"></a>
+		<a href="https://www.linkedin.com/in/tiffany-liew-258714139/" class="fab fa-linkedin" style="font-size:20px;"></a>
+		<a  href="https://www.youtube.com/channel/UCbhs4_2Xhhi-6GhlwocJTdg?view_as=subscriber" class="fab fa-youtube-square" style="font-size:20px;"></a>
 	</div>
+
 		
 </body>
 
