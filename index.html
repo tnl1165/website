@@ -1,132 +1,100 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>TFNY | DESIGNS</title>
+<title>tiffany | home</title>
 <script src="https://kit.fontawesome.com/ea9c26fdfb.js" crossorigin="anonymous"></script>
 <style>
-	@font-face {
-		font-family: oktabold;
-		src: url(Okta-BoldItalic.otf);
-	}
-	
-	@font-face {
-		font-family: oktalight;
-		src: url(Okta-ExtraLight.otf);
-	}
-	
-	@font-face {
-		font-family: canvas;
-		src: url(canvas.otf);
-	}
 	
 	*{box-sizing: border-box;}
 	
 	body{
 		margin: 0;
-		font-family: oktalight;
-		text-align: center;
-		color: #E9967A;
-		background-color: #fff0d3;
-		letter-spacing: 3px;
-	}
-	
-	/* Style the header */
-	.header {
-		padding: 400px;
-		text-align: center;
-		letter-spacing: 15px;
-		font-size: 30px;
-		font-family: oktabold;
+		font-family: arial;
+		text-align: left;
+		color: black;
+		background-color: white;
+		letter-spacing: 2px;
 	}
 	
 	/* Style the top navigation bar */
 	.topnav {
-		right: 0px;
-		padding: 10px;
-		overflow: hidden;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		background-color: #fff0d3;
-	}
-	
-	/* Special Font for tiffany*/
-	span {
-		font-size: 60px;
-		font-family: canvas;
-		letter-spacing: 5px;
-		color: #ed9c6a;
-		padding: 0px;
-		background-color: #fff0d3;
-		overflow: hidden;
-		position: fixed;
-		top: 0;
-	}
-	
-	/* Style the navigation links */
-	.topnav a{
-		float: right;
 		display: block;
-		text: center;
-		padding: 15px 25px;
-		font-size: 14px;
-		text-decoration: none;
+		list-style-type: none;
+		margin: 30px;
+		padding: 70px;
+		width: 25%;
+		font-size: 17px;
+		line-height: 30px;
+		overflow: auto;
+		position: fixed;
+		font-style: italic;
 	}
 	
-	/* Change text on hover */
-	a.nav:link {color: black;}
-	a.nav:visited {color: black;}
-	a.nav:hover {color: #a6a59d;}
+	/* Style the website title*/
+	.title {
+		display: block;
+		margin: 20px;
+		padding: 30px;
+		width: 30%;
+		font-size: 30px;
+		overflow: auto;
+		position: fixed;
+		font-style: italic;
+		color: #ffb5a1;
+	}
 	
-	/*Style Footer Links*/
+	
+	/* Style the header */
+	.header {
+		padding: 150px;
+		background-color: white;
+	}
+	
+	/*Style text links*/
 	a:visited {
-		color: #E9967A;
+		color: black; 
 		text-decoration: none;
 	}
 	a:link {
-		color: #E9967A;
+		color: black; 
 		text-decoration: none;
 	}
 	a:hover {
-		color: #fab18a;
+		color: #736f6e; 
 		text-decoration: none;
 	}
 	
 	
-	/* Columns */
+	/* Page Column */
 	.column {
-		text: center;
-		padding: 5px;
+		width: 75%;
+		padding: 10px;
+		float: right;
+		font-size: 25px;
+		font-style: italic;
 	}
-	
+		
 	/* Top column */
-	.column.one {
+	.columnone {
 		width: 100%;
-		background-color: #fff0d3;
-		background-size: cover;
-		font-size: 12px;
+		font-size: 30px;
+		padding: 10px;
 	}
-	
-	.posts {
-		background-color: #fff0d3;
-		width: 300px;
-		padding: 50px;
-		margin: 20px;
-	}
-	
+		
 	/* Middle column */
-	.column.two {
+	.columntwo {
 		width: 100%;
-		padding: 5px;
-	}
-	
-	/* Bottom column */
-	.column.three {
-		width: 100%;
-		background-color: #FAE2CA;
-		background-size: cover;
 		font-size: 12px;
+		float: right;
 	}
+			
+	/* Bottom column */
+	.columnthree {
+		width: 100%;
+		font-size: 12px;
+		float: left;
+	}
+
 	
 	/* Clear floats after columns */
 	.row:after {
@@ -135,74 +103,90 @@
 		clear: both;
 	}
 	
-	/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-	@media screen and (max-width: 600px) {
-	  .column {
-	    width: 100%;
-	  }
-	}
-	
 	/* Style footer */
 	.footer {
-		background-color: #F4C596;
-		padding: 5px;
-		text-align: center;
-		font-family: canvas;
+		background-color: #f0e8e3;
+		height: 300px;
+		padding: 10px;
+		text-align: left;
+		width: 100%;
 		font-size: 12px;
+		list-style-type: none;
 	}
 	
+	/* Footer columns*/
+	.footercolumn {
+		width: 25%;
+		padding: 20px;
+		float: left;
+		height: 250px;
+		line-height: 30px;
+	}
 	
 	
 </style>
 </head>
-<body>
+<body>	
+	
+	<div class="title">
+		<b>tiffanyyy.designs</b>
+	</div>
 	
 	<div class="topnav">
-		<a class="nav" href="ABOUT.html" style="float:right">ABOUT</a>
-		<a class="nav" href="ILLUSTRATIONS.html">ILLUSTRATION</a>
-		<a class="nav" href="PROJECTS.html">PROJECTS</a>
-		<a class="nav" href="index.html">HOME</a>
-		<a href="index.html" style="float:left"><span>tiffany</span></a>
-	</div>
+		<li><a href="index.html">home</a></li>
+		<li><a href="projects.html">projects</a></li>
+		<li><a href="illustrations.html">illustrations</a></li>
+		<li><a href="photography.html">photography</a></li>
+		<li><a href="about.html">about</a></li>
+	</div>	
 	
 	<div class="header">
+		<img src="painted_terrazzo_4.jpg" alt="background" style="width:100%">
 	</div>
-	
-
 	
 	<div class="row">
-		<div class="column one">
-	
-				
-		
-		</div>
-		
-		<div class="column two">
-			<h2>youtube</h2>
-			<iframe width="336" height="189" src="https://www.youtube.com/embed/G0X6UWKox28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<iframe width="336" height="189" src="https://www.youtube.com/embed/GLvSbBkzhe4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<iframe width="336" height="189" src="https://www.youtube.com/embed/g1MF5exZum0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-
-		<br>
-		<div class="column three">
-			<h2>instagram</h2>
-				<!--SnapWidget -->
-				<iframe src="https://snapwidget.com/embed/816402" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:1025px; height:205px"></iframe>
+		<div class="column">
+			<div class="columnone">
+				<p><b>.projects</b></p>
 			</div>
+			<div class="columntwo">
+				<img src="001.pdf" alt=plannerary style="width:100%">
+			</div>
+		</div>
+		<div class="columnthree">
+			<img src="002.pdf" alt=gamification style="width:100%">
+		</div>
 	</div>
-	
+			
 	<div class="footer">
-		<p><i class="far fa-copyright"></i>2020 by tiffany liew</p>
-			<a href="https://www.facebook.com/tiffany.liew.77" class="fab fa-facebook-square" style="font-size:20px;"></a>
-		<a href="https://www.instagram.com/existential_cry_sisss/" class="fab fa-instagram-square" style="font-size:20px;"></a>
-		<a href="https://www.pinterest.ca/tnl1165/" class="fab fa-pinterest-square" style="font-size:20px;"></a>
-		<a href="https://twitter.com/tiffyliew" class="fab fa-twitter-square" style="font-size:20px;"></a>
-		<a href="https://www.linkedin.com/in/tiffany-liew-258714139/" class="fab fa-linkedin" style="font-size:20px;"></a>
-		<a  href="https://www.youtube.com/channel/UCbhs4_2Xhhi-6GhlwocJTdg?view_as=subscriber" class="fab fa-youtube-square" style="font-size:20px;"></a>
+		<div class="row">
+			<div class="footercolumn">
+				<h2>tiffanyyy.designs</h2>
+			</div>
+			<div class="footercolumn">
+				<h2>Follow</h2>
+				<li><a href="https://www.pinterest.ca/tnl1165/">Pinterest</a></li>
+				<li><a href="https://www.instagram.com/tiffanyyy.designs/">Instagram</a></li>
+				<li><a href="https://www.youtube.com/channel/UCbhs4_2Xhhi-6GhlwocJTdg?view_as=subscriber">Youtube</a></li>
+			</div>
+			<div class="footercolumn">
+				<h2>Connect</h2>
+				<li><a href="https://www.linkedin.com/in/tiffany-liew-258714139/">Linkedin</a></li>
+				<li><a href="https://www.behance.net/tiffanyliew2">Behance</a></li>
+				<li><a href="https://twitter.com/tiffyliew">Twitter</a></li>
+				<li><a href="https://www.facebook.com/tiffany.liew.77">Facebook</a></li>
+			</div>
+			<div class="footercolumn">
+				<h2>Contact</h2>
+				<li>Email: tnl1165@gmail.com</li>
+				<li>Phone: (604)-374-2827</li>
+				<li>Vancouver, BC</li>
+			</div>
+		</div>
+			
+			<p><i class="far fa-copyright"></i>2020 Tiffany Liew</p>
 	</div>
 
-		
 </body>
 
 </html>
